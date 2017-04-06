@@ -66,28 +66,40 @@ public class PairOfDice {
         //two 6s
         System.out.println("You rolled " + intDiceCombos.get(12) + " Boxcars.");
         System.out.println();
-        //additional dice rolls
+
+        /*additional dice rolls
         System.out.println("You also rolled: ");
+
         //1 and 1
         System.out.println(intDiceCombos.get(2) + "\tSnake Eyes (1 and 1)");
+
         //1 and 2
         //System.out.println(intDiceCombos.get(3) + "\tCross Eyes (1 and 2)");
+
         //2 and 2
         System.out.println(intDiceCombos.get(4) + "\tLittle Joes (2 and 2)");
-        //2 and 3
+
+        //2 and 3, or 1 and 4
         //System.out.println(intDiceCombos.get(5) + "\tThirty-two Juice (2 and 3, or 1 and 4)");
+
         //3 and 3
         System.out.println(intDiceCombos.get(6) + "\tMy Sisters (3 and 3)");
-        //3 and 4
+
+        //3 and 4, or 2 and 5, or 1 and 6
         //System.out.println(intDiceCombos.get(7) + "\tNatural Sevens (3 and 4, or 2 and 5, or 1 and 6)");
+
         //4 and 4
         System.out.println(intDiceCombos.get(8) + "\tSquare Pairs (4 and 4)");
-        //4 and 5
+
+        //4 and 5, or 3 and 6, or 2 and 7
         //System.out.println(intDiceCombos.get(9) + "\tNina from Pasadena (4 and 5, or 3 and 6, or 2 and 7)");
+
         //5 and 5
         System.out.println(intDiceCombos.get(10) + "\tPuppy Paws (5 and 5)");
+
         //5 and 6
         //System.out.println(intDiceCombos.get(11) + "\tSix Five, No Jive! (5 and 6)");
         System.out.println();
+        */
     }
 }

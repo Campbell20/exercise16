@@ -13,7 +13,7 @@ import java.util.Scanner;
 */
 
 //name of the class according the exercise requirements. The class creates 2 die, an array of 12 elements, and puts all
-// possible dice roll combinations from the two die being rolled 1000 times.
+//possible dice roll combinations from the two die being rolled 1000 times.
 public class PairOfDice {
     int intDie1; //our first die
     int intDie2; //our second die
@@ -25,7 +25,6 @@ public class PairOfDice {
     //constructor of PairOfDice class
     public PairOfDice() {
         BeginProgram();
-
     }
 
     //begins the program for the user. Telling the user what will happen and why
@@ -59,10 +58,11 @@ public class PairOfDice {
             intDiceCombos.set(intDie1 + intDie2, intDiceCombos.get(intDie1 + intDie2) + 1);
         }
         //System.out.println(intDiceCombos); //testing array to make sure it's working
-        GetDoubles();
+        PrintCombos();
     }
 
-    private void GetDoubles(){
+    //get all of the possible combinations (exercise is only asking for double 6s), and print them to user
+    private void PrintCombos(){
         //two 6s
         System.out.println("You rolled " + intDiceCombos.get(12) + " Boxcars.");
         System.out.println();

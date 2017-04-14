@@ -19,7 +19,6 @@ public class PairOfDice {
     int intDie2; //our second die
     int intMaxDiceRoll = 1000; //how many times do you want the program to roll the dice?
 
-    String strUserInput = ""; //user's input
     ArrayList<Integer> intDiceCombos = new ArrayList<>(); // our array of all possible dice rolls
 
     //constructor of PairOfDice class
@@ -29,11 +28,13 @@ public class PairOfDice {
 
     //begins the program for the user. Telling the user what will happen and why
     private void BeginProgram() {
-        System.out.println("Type anything and press enter to roll the dice " + intMaxDiceRoll + " times.");
+        System.out.println("Press enter to roll the dice " + intMaxDiceRoll + " times.");
         System.out.println("The system will automatically determine how many double sixes you rolled.");
         Scanner objInput = new Scanner(System.in);
-        strUserInput = objInput.next();
-        CreateArray();
+        String strUserInput = objInput.nextLine();
+        if (strUserInput.equals("")) {
+            CreateArray();
+        }
     }
 
     //create a blank array of 12 elements. All of the double rolls will go into each element in the array.
